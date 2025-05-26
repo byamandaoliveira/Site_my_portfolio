@@ -67,7 +67,7 @@ body {
     display: none;
     cursor: pointer;
     justify-content: right;
-    align-items:right;
+    align-items: right;
 }
 
 .menu-icon img {
@@ -75,10 +75,10 @@ body {
     width: 30px;
     display: flex;
     justify-content: right;
-    align-items:right;
+    align-items: right;
 }
 
-@media(max-width:693px) {
+@media(max-width:600px) {
 
     .navegacao ul {
         position: absolute;
@@ -104,12 +104,28 @@ body {
     .menu-icon {
         display: block;
         display: flex;
-    justify-content: right;
-    align-items:right;
+        justify-content: right;
+        align-items: right;
     }
+
+    .cabecalho h1 {
+        font-size: 2rem;
+        color: var(--primaria);
+        font-weight: bold;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        position: center;
+        padding-left: 20px;
+    }
+
+    .cabecalho .subtitulo {
+        font-size: 0.9rem;
+        color: var(--claro);
+        align-items: center;
+    }
+
 }
-
-
 
 .cabecalho {
     min-height: 110vh;
@@ -117,7 +133,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .foto-perfil {
@@ -138,6 +154,8 @@ h1 {
     justify-content: center;
     align-items: center;
     position: center;
+    padding-left: 10px;
+
 }
 
 .subtitulo {
@@ -158,7 +176,7 @@ h1 {
 }
 
 .sobre-caixa {
-    padding:1rem;
+    padding: 1rem;
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 16px;
@@ -173,12 +191,13 @@ h1 {
     line-height: 1.5rem;
 }
 
-.intro-paragrafo{
+.intro-paragrafo {
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
 }
-.botao-cv{
+
+.botao-cv {
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
     padding: 15px 2rem;
@@ -195,14 +214,15 @@ h1 {
     justify-items: center;
     margin: 0 auto;
     display: flex;
+    text-size-adjust: auto;
 }
 
-.botao-cv:hover{
+.botao-cv:hover {
     transform: translateY(-4px);
     box-shadow: 8 5px 15px rgba(79, 70, 229, 0.3);
 }
 
-.botao-cv a{
+.botao-cv a {
     text-decoration: none;
     list-style: none;
     color: var(--claro);
@@ -246,7 +266,7 @@ h1 {
     transform: translateY(-10px) scale(1.03);
 }
 
-.projetos-card a{
+.projetos-card a {
     text-decoration: none;
     list-style: none;
     color: var(--claro);
@@ -269,7 +289,7 @@ h1 {
     margin-bottom: 55px;
 }
 
-.btn{
+.btn {
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
     font-size: 20px;
@@ -294,8 +314,6 @@ h1 {
 .caixa-texto-projeto {
     padding: 1.5rem;
 }
-
-
 
 .Contato {
     padding: 4rem 2rem;
@@ -378,9 +396,9 @@ h1 {
 .footer .container i {
     color: white;
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
-    font-size: 19px;
-    padding: 40px;
-    margin: 50px;
+    font-size: 29px;
+    padding: 20px;
+    margin: 1rem;
     border-radius: 10px;
 }
 
@@ -393,11 +411,13 @@ h1 {
 
 
 @keyframes flutuar {
-    0%, 100% {
-     transform: translateY(0);
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
 
-    50%{
+    50% {
         transform: translateY(-20px);
     }
 }
