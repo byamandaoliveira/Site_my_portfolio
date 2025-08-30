@@ -163,6 +163,7 @@ h1 {
     color: var(--claro);
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 
