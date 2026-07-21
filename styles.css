@@ -164,6 +164,7 @@ h1 {
 
 .subtitulo {
     font-size: 1.5rem;
+    line-height: 1.9rem;
     color: var(--claro);
     align-items: center;
     text-align: center;
@@ -298,23 +299,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .linguagens {
     padding: 4rem 2rem;
 }
@@ -327,7 +311,7 @@ h1 {
 
 .projetos-caixa-1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 2rem;
     max-width: 100%;
     margin: 0 auto;
@@ -335,7 +319,7 @@ h1 {
 
 .projetos-caixa {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
     gap: 2rem;
     max-width: 100%;
     margin: 0 auto;
